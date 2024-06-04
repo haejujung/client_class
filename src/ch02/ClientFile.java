@@ -18,7 +18,6 @@ public class ClientFile {
 
 			PrintWriter writer = new PrintWriter(socket.getOutputStream(), true); //true --> auto flush
 			writer.println("빨리 보내버리기~"); // 줄바꿈 처리를 하자
-			writer.flush();  
 
 		} catch (Exception e) {
 			e.printStackTrace();

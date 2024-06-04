@@ -10,7 +10,7 @@ public class MyClient extends AbstrcatClient {
 	@Override
 	protected void setupClient() throws IOException {
 
-		Socket socket = new Socket("192.168.0.46", 5000);
+		Socket socket = new Socket("localhost", 5000);
 
 	}
 

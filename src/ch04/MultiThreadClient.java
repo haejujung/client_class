@@ -14,7 +14,7 @@ public class MultiThreadClient {
 
 		try {
 
-			Socket socket = new Socket("192.168.0.48", 5000);
+			Socket socket = new Socket("localhost", 5001);
 			System.out.println("*** connected to the server ***");
 			// 서버에 입력할 데이터
 			// 서버의 데이터를 받을 스트림
@@ -29,7 +29,7 @@ public class MultiThreadClient {
 				try {
 					String serverMesage;
 					while ((serverMesage = socketReader.readLine()) != null) {
-						System.out.println("서버에서 온 MSG : " + serverMesage);
+						System.out.println("서버에서온 메시지 : " + serverMesage);
 					}
 				} catch (IOException e) {
 					e.printStackTrace();

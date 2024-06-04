@@ -16,7 +16,7 @@ public class ClientFile {
 		//
 		Socket socket = null;
 		try {
-			socket = new Socket("192.168.0.46", 5001);
+			socket = new Socket("localhost", 5001);
 
 			PrintWriter writer = new PrintWriter(socket.getOutputStream(), true); // true --> auto flush
 			writer.println(" Nuclear launch detected "); // 줄바꿈 처리를 하자

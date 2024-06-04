@@ -13,7 +13,7 @@ public class Client {
 
 		// 생성자 매개변수에 서버측 (IP주소, 포트번호)
 		// 127.0.0.1 <- 자기 자신에 주소
-		try (Socket socket = new Socket("hostlocal", 5000)) {
+		try (Socket socket = new Socket("localhost", 5000)) {
 			// new Socket("localhost", 5000) -> 객체 생성 시 서버측과 연결 되어서
 			// 스트림을 활용 할 수 있다.
 			// 대상은 소켓이다. !!!

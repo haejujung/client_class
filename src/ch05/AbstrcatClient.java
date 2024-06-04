@@ -24,7 +24,7 @@ public abstract class AbstrcatClient {
 		this.socket = socket;
 	}
 
-	protected ServerSocket getsServerSocket() {
+	protected ServerSocket getServerSocket() {
 		return serverSocket;
 	}
 
